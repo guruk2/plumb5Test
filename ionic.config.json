@@ -1,0 +1,7 @@
+{
+  "name": "plumb5Test",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
