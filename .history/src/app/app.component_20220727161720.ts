@@ -52,18 +52,13 @@ export class AppComponent {
       Occupation: 'SE',
       Interests: 'Eating',
       Location: 'Bangalore'
-    });
-
-    Plumb5.tracking({
-
-      ScreenName: 'test',
-      PageParameter: ''
-    });
+     });
     this.router.events.forEach((event) => {
 
       if (event instanceof NavigationStart) {
 
         Plumb5.tracking({
+          // eslint-disable-next-line @typescript-eslint/naming-convention
           ScreenName: event.url,
           PageParameter: ''
         });
@@ -73,13 +68,26 @@ export class AppComponent {
           PageParameter: ''
         });
       }
-    });
 
-    Plumb5.eventPost({
-      Type: 'Button',
-      Name: 'demo@demo.com',
-      PhoneNumber: '987654321',
-      Value: 1
+    // const eventDetailsJson = [
+      //   {
+      //     "Type": "Button",
+      //     "Name": "demo@demo.com",
+      //     "PhoneNumber": "987654321",
+      //     "Value": 1
+
+      //   }
+      // ];
+      // document.addEventListener('onPushNotification', (e: any) => {
+      //   console.log("onPushNotification");
+      //   console.log(JSON.stringify(e));
+      //   const routeUrl = e.routeUrl;
+      //   console.log("routeUrl", routeUrl); // similar parameter in case of route or button click
+      //   this.router.navigate([routeUrl]);
+      // });
+
+      // Plumb5.setUserDetails(userDetailsJson);
+      // Plumb5.eventPost(eventDetailsJson);
     });
   }
 

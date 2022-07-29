@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">plumb5Test</string>
+    <string name="title_activity_main">plumb5Test</string>
+    <string name="package_name">com.cordova.plumb.demo</string>
+    <string name="custom_url_scheme">com.cordova.plumb.demo</string>
+</resources>
